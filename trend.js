@@ -1,6 +1,6 @@
 var day = ["9am", "10am", "11am", "12am","1pm","2pm","3pm","4pm","5pm"];
 var week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-var month = ["Week1", "Week2", "Week3", "Week4", "Week5"];
+var month = ["Week1", "Week2", "Week3", "Week4"];
 
 var monthData = [20, 25, 33, 27];
 var dayData = [6,3,4,2,7,8,9];

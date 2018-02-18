@@ -1,4 +1,4 @@
-var month = ["Jan", "Feb", "Mar", "Apr"];
+var month = ["Week 1", "Week 2", "Week 3", "Week 4"];
 
 var trace1 = {
   x: month,
