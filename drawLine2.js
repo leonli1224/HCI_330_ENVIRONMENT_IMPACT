@@ -15,4 +15,4 @@ var layout = {
 
 var data = [trace1];
 
-Plotly.newPlot('trend_co2', data, layout);
+Plotly.newPlot('trend_co2', data, layout, {displayModeBar: false});

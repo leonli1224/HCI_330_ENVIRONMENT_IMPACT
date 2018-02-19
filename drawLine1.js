@@ -15,4 +15,4 @@ var layout = {
 
 var data = [trace1];
 
-Plotly.newPlot('trend_water', data, layout);
+Plotly.newPlot('trend_water', data, layout,{displayModeBar: false});
