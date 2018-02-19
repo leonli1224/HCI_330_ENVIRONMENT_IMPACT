@@ -8,4 +8,4 @@ var layout = {
   title:'How Do I Make CO2?'
 };
 
-Plotly.newPlot('pie_co2', data, layout);
+Plotly.newPlot('pie_co2', data, layout, {displayModeBar: false});
