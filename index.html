@@ -10,11 +10,11 @@
     <body>
       <div class="headbar">
         <nav class="navi">
-          <a class="fa fa-leaf" id="leaf"> </a>
-          <a>Profile</a>
-          <a>Log Out</a>
-          <a class="fa fa-bars" id="menuIcon" onclick="openNav()"> </a>
-          <a id="menuTitle">Menu</a>
+          <a href="index.html" class="fa fa-leaf" id="leaf"> </a>
+          <div class="Trend">   <a href="newTrend.html">Trend</a>      </div>
+          <div class="Rank">    <a href="#">Rank</a>                   </div>
+          <div class="Import">  <a href="#">Report New Import</a>      </div>
+          <div class="Product"> <a href="#">Product Impact Search</a>  </div>
         </nav>
       </div>
       <div class="chart">
@@ -23,23 +23,6 @@
           <div id="pie_co2"></div>
           <script src="drawPieChart2.js"> </script>
       </div>
-      <div id="mySidenav" class="sidenav">
-        <a class="closebtn" onclick="closeNav()"><i class="material-icons">clear</i></a>
-        <a href="newTrend.html">Trend</a>
-        <a href="#">Rank</a>
-        <a href="#">Report New Import</a>
-        <a href="#">Product Impact Search</a>
-        <a href="index.html">HomePage</a>
-      </div>
-      <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-        }
-
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-        }
-      </script>
    </body>
 </html>
 <!--
