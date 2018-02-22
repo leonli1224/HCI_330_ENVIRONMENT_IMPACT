@@ -227,9 +227,12 @@ body {
 }
 /* -----------------newImpact style -----------------*/
 .form {
-    width: 100%;
+    width:500px;
     margin-left: 30%;
     margin-top:5%;
+    display: inline-block;
+    background-color:#90f999;
+    padding: 10px;
 }
 
 .date {
@@ -287,8 +290,8 @@ body {
 
 #unit{
     position: relative;
-    left: 150px;
-    bottom: 47px;
+    margin-left: 5px;
+    display:inline;
 }
 
 .activity {
