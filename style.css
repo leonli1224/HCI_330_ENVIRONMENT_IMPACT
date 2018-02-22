@@ -225,3 +225,109 @@ body {
 .dropdown-co2:hover .dropbtn-co2 {
     background-color: #90f999;
 }
+/* -----------------newImport style -----------------*/
+.form {
+    width: 40%;
+    margin-left: 30%;
+    margin-top:15%;
+}
+
+.date {
+    font-size: 24px;
+    margin-bottom: 25px;
+    height: 28px;
+}
+
+.data-dropbtn-area {
+    position: relative;
+    left: 220px;
+    bottom: 30px;
+    margin-right: -100px;
+}
+
+.time {
+    margin-bottom: 25px;
+    font-size: 24px;
+    height: 28px;
+}
+
+.time-dropbtn-area {
+    position: relative;
+    left: 220px;
+    bottom: 30px;
+    margin-right: -100px;
+}
+
+
+.type {
+    margin-bottom: 25px;
+    font-size: 24px;
+    height: 28px;
+}
+
+.type-radiobox-area {
+    position: relative;
+    left: 220px;
+    bottom: 30px;
+    margin-right: -100px;
+}
+
+.amount {
+    margin-bottom: 25px;
+    font-size: 24px;
+    height: 28px;
+}
+
+.amount-area {
+    position: relative;
+    left: 220px;
+    bottom: 23px;
+    margin-right: -100px;
+}
+
+#unit{
+    position: relative;
+    left: 150px;
+    bottom: 47px;
+}
+
+.activity {
+    margin-bottom: 25px;
+    font-size: 24px;
+    height: 28px;
+}
+
+.activity-area {
+    position: relative;
+    left: 220px;
+    bottom: 23px;
+    margin-right: -100px;
+}
+
+#waterdropdown{
+    display: block;
+}
+
+#co2dropdown {
+    display: none;;
+}
+
+a.button {
+    -webkit-appearance: button;
+    text-decoration: none;
+    color: initial;
+    width: 70px;
+    position: relative;
+    left: 150px;
+    top: 50px;
+    text-align: center;
+}
+
+a.submit{
+    position: relative;
+    width :40%;
+    margin-left: 35%;
+    top: 300px;
+    font-size: 30px;
+}
+
