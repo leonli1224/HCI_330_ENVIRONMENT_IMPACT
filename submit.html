@@ -93,78 +93,8 @@
           <div class="Product"> <a href="#">Product Impact Search</a>  </div>
         </nav>
       </div>
-      <div class="form">
-          <div class="date">Date:
-            <div class="data-dropbtn-area">
-              <form action="" name="someform">
-                  <select id="daydropdown">
-                  </select> 
-                  <select id="monthdropdown">
-                  </select> 
-                  <select id="yeardropdown">
-                  </select> 
-                  </form>
-                  
-                  <script type="text/javascript">
-                  
-                  //populatedropdown(id_of_day_select, id_of_month_select, id_of_year_select)
-                  window.onload=function(){
-                  populatedropdown("daydropdown", "monthdropdown", "yeardropdown")
-                  populatedropdowntime("hourdropdown", "secdropdown", "timedropdown")
-                  typedropdownwater("waterdropdown")
-                  typedropdownco2("co2dropdown")
-                  }
 
-                  console.log(document.getElementById("co2dropdown").style.display)
-                  console.log(document.getElementById("waterdropdown").style.display)
-                  </script>
-            </div>
-          </div>
-          <div class="time">Time:
-            <div class="time-dropbtn-area">
-                <form action="" name="someform">
-                  <a>h: </a>
-                  <select id="hourdropdown">
-                  </select>
-                  <a>m: </a>
-                  <select id="secdropdown">
-                  </select>
-                  <select id="timedropdown">
-                  </select> 
-                </form>
-            </div>  
-          </div>
-          <div class="type">Impact Type:
-            <div class="type-radiobox-area">
-              <form action="">
-                <input type="radio" name="type" value="water" onclick="changetoliter()"> Water
-                <input type="radio" name="type" value="CO2" onclick="changetogram()"> CO2
-              </form>
-            </div>
-          </div>
-          <div class="amount">Amount:
-            <div class="amount-area">
-              <form action="">
-                <input name="amountfill" type="text">
-              </form>
-              <a id="unit">
-                Liter
-              </a>
-            </div>
-          </div>
-          <div class="activity">Impact Activity:
-           <div class="activity-area">
-              <form action="" name="someform">
-              <select id="waterdropdown">
-              </select> 
-              <select id="co2dropdown">
-              </select> 
-              </form>
-           </div>
-          </div>
-          <a href="submit.html" class="button">Submit</a>
-          <a href="index.html" class="button">Cancel</a>
-      </div>
+      <a class="submit">Thanks! New Import Submitted Succesfully!</a>
    </body>
 </html>
 <!--
