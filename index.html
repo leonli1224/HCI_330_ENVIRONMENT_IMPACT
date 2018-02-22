@@ -7,24 +7,28 @@
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
     </head>
+</nav>
     <body>
       <div class="headbar">
-        <nav class="navi">
+        <nav class="navbar nav">
           <a href="index.html" class="fa fa-leaf" id="leaf"> </a>
-          <div class="Trend">   <a href="newTrend.html">Trend</a>      </div>
+          <a class="nav-link" href="newTrend.html" id="headerText">Trend</a>
+          <a class="nav-link" href="#" id="headerText">Rank</a>
+          <a class="nav-link" href="#" id="headerText">Enter a New Impact</a>
+          <a class="nav-link" href="#" id="headerText">Product Search</a>
+          <!--<div class="Trend"><a href="newTrend.html">Trend</a></div>
           <div class="Rank">    <a href="#">Rank</a>                   </div>
           <div class="Import">  <a href="newImport.html">Report New Import</a>      </div>
           <div class="Product"> <a href="#">Product Impact Search</a>  </div>
         </nav>
       </div>
       <div class="chart">
-          <div id="pie_water"></div>
+          <div id="pie_water">
            <script src="drawPieChart1.js"> </script>
-          <div id="pie_co2"></div>
+           </div>
+          <div id="pie_co2">
           <script src="drawPieChart2.js"> </script>
+          </div>
       </div>
    </body>
 </html>
-<!--
-* bg iphone img is 363x762px
-* iphone 'screen' is apprx 300x530 -->
