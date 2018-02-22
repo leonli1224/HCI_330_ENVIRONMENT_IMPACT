@@ -246,14 +246,71 @@ body {
 .type {
     margin-bottom: 25px;
     font-size: 24px;
+    height: 28px;
+}
+
+.type-radiobox-area {
+    position: relative;
+    left: 220px;
+    bottom: 30px;
+    margin-right: -100px;
 }
 
 .amount {
     margin-bottom: 25px;
     font-size: 24px;
+    height: 28px;
+}
+
+.amount-area {
+    position: relative;
+    left: 220px;
+    bottom: 23px;
+    margin-right: -100px;
+}
+
+#unit{
+    position: relative;
+    left: 150px;
+    bottom: 47px;
 }
 
 .activity {
     margin-bottom: 25px;
     font-size: 24px;
+    height: 28px;
+}
+
+.activity-area {
+    position: relative;
+    left: 220px;
+    bottom: 23px;
+    margin-right: -100px;
+}
+
+#waterdropdown{
+    display: block;
+}
+
+#co2dropdown {
+    display: none;;
+}
+
+a.button {
+    -webkit-appearance: button;
+    text-decoration: none;
+    color: initial;
+    width: 70px;
+    position: relative;
+    left: 150px;
+    top: 50px;
+    text-align: center;
+}
+
+a.submit{
+    position: relative;
+    width :40%;
+    margin-left: 35%;
+    top: 300px;
+    font-size: 30px;
 }
