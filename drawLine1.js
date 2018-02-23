@@ -10,7 +10,11 @@ var layout = {
   title:"This Month's Water Usage",
   yaxis:{
     title:'Liters'
-  }
+  },
+  titlefont:{
+    family: 'Avenir, sans-serif',
+    size: 18
+  },
 };
 
 var data = [trace1];

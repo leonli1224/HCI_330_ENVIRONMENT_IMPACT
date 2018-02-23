@@ -10,7 +10,11 @@ var layout = {
   title:"This Month's CO2 Production",
   yaxis:{
     title:'Kilograms'
-  }
+  },
+  titlefont:{
+    family: 'Avenir, sans-serif',
+    size: 18
+  },
 };
 
 var data = [trace1];
