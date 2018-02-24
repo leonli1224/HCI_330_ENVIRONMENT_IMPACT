@@ -1,30 +1,59 @@
 <html>
     <head>
-        <title>Environmental Impact Dashboard</title>
-        <link rel="stylesheet" type="text/css" href="style.css"/>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+      <title>Environmental Impact Dashboard</title>
+      <link rel="stylesheet" type="text/css" href="style.css"/>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+      <script src="newImpact.js"></script>
     </head>
-</nav>
     <body>
       <div class="headbar">
         <nav class="navbar nav">
           <a href="index.html" class="fa fa-leaf" id="leaf"> </a>
+          <a class="nav-link loginText" href="#" id="headerText">Log In</a>
+          <a class="nav-link signupText" href="#" id="headerText">Sign Up</a>
           <a class="nav-link" href="newTrend.html" id="headerText">Trend</a>
           <a class="nav-link" href="#" id="headerText">Rank</a>
           <a class="nav-link" href="newImport.html" id="headerText">Enter a New Impact</a>
           <a class="nav-link" href="#" id="headerText">Product Search</a>
+          <!--<div class="Trend"><a href="newTrend.html">Trend</a></div>
+          <div class="Rank">    <a href="#">Rank</a>                   </div>
+          <div class="Import">  <a href="#">Report New Import</a>      </div>
+          <div class="Product"> <a href="#">Product Impact Search</a>  </div>-->
         </nav>
       </div>
-      <div class="chart">
-          <div id="pie_water">
-           <script src="drawPieChart1.js"> </script>
-           </div>
-          <div id="pie_co2">
-          <script src="drawPieChart2.js"> </script>
-          </div>
       </div>
+
+      <div class="welcome-text-image">
+        <div class="welcome-text-div">
+        <h1 class="welcome-text-header">Welcome to ImpactTrack!</h2>
+        <h3 class="welcome-text">ImpactTrack is an online tool to help you track your personal environmental impact</h3>
+        <h3 class="welcome-text">Please log in or sign up to begin!</h3>
+      </div>
+      </div>
+
+      <div>
+        <p class="how-work">How does it work?</p>
+      </div>
+
+      <div class="explanation-div">
+      <div class="explanation-text">
+        <p class="explanation-header">Entering data as easy as...</p>
+        <p>One. One form to track all of your water consumption and carbon production
+        activities.</p>
+      </div>
+
+      <div class="explanation-text">
+        <p class="explanation-header">Track your trends</p>
+        <p>Track your water consumption and carbon production using our online tool.</p>
+      </div>
+
+      <div class="explanation-text">
+        <p class="explanation-header">A community of users like you</p>
+        <p>Using your personal profile, interact with other users. Share knowledge and encourage progress.</p>
+      </div>
+    </div>
    </body>
 </html>
