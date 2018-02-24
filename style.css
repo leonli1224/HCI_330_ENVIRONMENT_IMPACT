@@ -24,34 +24,16 @@ body {
 #headerText{
   font-size:24px;
 }
-/*
-.Trend {
-    font-size: 24px;
-    position: relative;
-    margin-bottom: 30px;
-    margin-left: 100px;
+#signupText{/*change this innerHTML to be "" after login*/
+  font-size:18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
-.Rank {
-    font-size: 24px;
-    position: relative;
-    margin-bottom: 30px;
-    margin-left: 205px;
+#loginText{/*change this innerHTML to be "" after login*/
+  font-size:18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
-.Import {
-    font-size: 24px;
-    position: relative;
-    margin-bottom: 30px;
-    left: 300px;
-}
-
-.Product {
-    font-size: 24px;
-    position: relative;
-    margin-bottom: 30px;
-    margin-left: 540px;
-}*/
 
 .nav a {
   color:           #F9F9F9;
@@ -61,6 +43,7 @@ body {
   padding: 20px;
   text-decoration: none;
 }
+
 
 .chart {
 	background-color: white;
@@ -338,4 +321,73 @@ a.submit{
     margin-left: 35%;
     top: 300px;
     font-size: 30px;
+}
+
+/******************new homepage**********/
+.welcome-text-div{
+  /*background-color:#90f999;*/
+  /*background-color: #ffffff;*/
+  color:white;
+  margin: auto;
+  /*margin-top: 30px;*/
+  padding-top:30px;
+  padding-bottom:30px;
+  padding-left:10px;
+  width: 75%;
+  height:auto;
+  /*border-radius: 10px;*/
+}
+
+.welcome-text-header{
+  padding:0;
+  margin:5px;
+  font-size:75px;
+}
+.welcome-text{
+  padding:0;
+  margin:5px;
+  margin-left: 50px;
+}
+.explanation-div{
+  margin:auto;
+  padding:0;
+  width:75%;
+  height:auto;
+  /*padding:10px;*/
+  /*margin:10px;*/
+}
+.welcome-text-image{
+  padding-top:50px;
+  padding-bottom: 50px;
+  height: auto;
+  width:100%;
+  background-image: url(images/mountain_bg_image_darkened.jpg);
+  background-color: #cccccc;
+  background-size: cover;
+}
+
+.explanation-text{
+  /*background-color: #cccccc;*/
+  vertical-align: top;
+  color:black;
+  margin: auto;
+  padding: 10px;
+  height:200px ;
+  width:30%;
+  display: inline-block;
+}
+
+.explanation-header{
+  font-size:22px;
+  font-weight: bolder;
+}
+
+.how-work{
+  font-size:40px;
+  width:75%;
+  margin:auto;
+  margin-top: 20px;
+  height: auto;
+  text-align: center;
+  font-weight: bold;
 }
