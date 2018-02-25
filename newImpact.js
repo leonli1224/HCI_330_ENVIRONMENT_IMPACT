@@ -96,7 +96,9 @@ typedropdownwater("waterdropdown")
 typedropdownco2("co2dropdown")
 }
 
-//modal
+console.log(document.getElementById("co2dropdown").style.display)
+console.log(document.getElementById("waterdropdown").style.display)
+//modal POPUP TO BE IMPLEMENTED LATER 
 window.onload = function(){
   // Get the modal
   var modal = document.getElementById('myModal');
@@ -125,6 +127,3 @@ window.onload = function(){
   }
 
 }
-
-console.log(document.getElementById("co2dropdown").style.display)
-console.log(document.getElementById("waterdropdown").style.display)
