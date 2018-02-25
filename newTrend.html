@@ -7,27 +7,40 @@
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
     </head>
-    
+
     <body>
-      
+
       <div class="headbar">
-        <nav class="navi">
+        <nav class="navbar nav">
           <a href="index.html" class="fa fa-leaf" id="leaf"> </a>
-          <div class="Trend">   <a href="newTrend.html">Trend</a>      </div>
+          <a class="nav-link loginText" href="#" id="headerText">Log In</a>
+          <a class="nav-link signupText" href="#" id="headerText">Sign Up</a>
+          <a class="nav-link" href="newTrend.html" id="headerText">Trend</a>
+          <a class="nav-link" href="#" id="headerText">Rank</a>
+          <a class="nav-link" href="newImport.html" id="headerText">Enter a New Impact</a>
+          <a class="nav-link" href="#" id="headerText">Product Search</a>
+          <!--<div class="Trend"><a href="newTrend.html">Trend</a></div>
           <div class="Rank">    <a href="#">Rank</a>                   </div>
-          <div class="Import">  <a href="newImport.html">Report New Import</a>      </div>
-          <div class="Product"> <a href="#">Product Impact Search</a>  </div>
+          <div class="Import">  <a href="#">Report New Import</a>      </div>
+          <div class="Product"> <a href="#">Product Impact Search</a>  </div>-->
         </nav>
       </div>
-      
-      
+      </div>
+
+
       <div class="chart">
-        <div class="chart">
           <div id="trend_water"></div>
           <script src="drawLine1.js"> </script>
           <div id="trend_co2"></div>
           <script src="drawLine2.js"> </script>
+
+
+
+
+        <script src="trend.js"> </script>
         </div>
+
+      <div class="drop-buttons">
         <div class="dropdown">
           <button class="dropbtn">Water Time Range</button>
             <div class="dropdown-content">
@@ -38,7 +51,7 @@
         </div>
 
 
-        <!-- Chester update -->
+
         <div class="dropdown-co2">
           <button class="dropbtn-co2">CO2 Time Range</button>
             <div class="dropdown-content-co2">
@@ -46,9 +59,15 @@
               <a onclick="setco2XtoWeek()">Week</a>
               <a onclick="setco2XtoMonth()">Month</a>
             </div>
-        </div>
-        <script src="trend.js"> </script>
+        </div> 
       </div>
+
+        <div class="chart-pie">
+          <div id="pie_water"></div>
+          <script src="drawPieChart1.js"> </script>
+          <div id="pie_co2"></div>
+          <script src="drawPieChart2.js"> </script>
+        </div>
    </body>
 </html>
 <!--

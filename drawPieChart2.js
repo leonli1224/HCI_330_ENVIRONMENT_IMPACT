@@ -5,7 +5,21 @@ var data = [{
 }];
 
 var layout = {
-  title:'How Do I Make CO2?'
+  height: 400,
+  width: 500,
+  title:'How Do I Product CO2? My Overall CO2 Trend',
+  titlefont:{
+    family: 'Avenir, sans-serif',
+    size: 18
+  },
+  legend: {
+    x: 1,
+    y: 1,
+    font:{
+      family: 'Avenir, sans-serif',
+      size: 14
+    }
+  }
 };
 
 Plotly.newPlot('pie_co2', data, layout, {displayModeBar: false});

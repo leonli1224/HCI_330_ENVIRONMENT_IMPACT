@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Environmental Impact Dashboard</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+    </head>
+</nav>
+    <body>
+      <div class="headbar">
+        <nav class="navbar nav">
+          <a href="index.html" class="fa fa-leaf" id="leaf"> </a>
+          <a class="nav-link" href="newTrend.html" id="headerText">Trend</a>
+          <a class="nav-link" href="#" id="headerText">Rank</a>
+          <a class="nav-link" href="newImport.html" id="headerText">Enter a New Impact</a>
+          <a class="nav-link" href="#" id="headerText">Product Search</a>
+        </nav>
+      </div>
+      <div class="chart">
+          <div id="pie_water">
+           <script src="drawPieChart1.js"> </script>
+           </div>
+          <div id="pie_co2">
+          <script src="drawPieChart2.js"> </script>
+          </div>
+      </div>
+   </body>
+</html>
