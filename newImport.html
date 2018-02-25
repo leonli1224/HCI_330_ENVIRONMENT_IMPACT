@@ -57,15 +57,15 @@
           <div class="type">Impact Type:
             <div class="type-radiobox-area">
               <form action="">
-                <input type="radio" name="type" value="water" onclick="changetoliter()"> Water
-                <input type="radio" name="type" value="CO2" onclick="changetogram()"> CO2
+                <input id="type1" type="radio" name="type" value="water" onclick="changetoliter()"> Water
+                <input id="type2" type="radio" name="type" value="CO2" onclick="changetogram()"> CO2
               </form>
             </div>
           </div>
           <div class="amount">Amount:
             <div class="amount-area">
               <form action="">
-                <input name="amountfill" type="text">
+                <input id = "numb" name="amountfill" type="text">
                 <p id="unit">
                   Liter(s)
                 </p>
@@ -84,7 +84,7 @@
            </div>
           </div>
           <div class="form-submit-div">
-          <a href="submit.html" class="form-submit-button" onclick="">Submit</a>
+          <a class="form-submit-button" onclick="validate()">Submit</a>
           <!-- THIS IS POPUP TO BE IMPLEMENTED LATER
           Trigger/Open The Modal
           <button id="myBtn">Open Modal</button>
@@ -101,6 +101,7 @@
           </div>-->
           <a href="index.html" class="form-submit-button">Cancel</a>
       </div>
+      <p id="warning"></p>
     </div>
    </body>
 </html>

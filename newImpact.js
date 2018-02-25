@@ -73,19 +73,39 @@
   }
 
   //data validation for liters
-  function myFunction() {
-      var x, text;
+  function validate() {
+      var x, y, water, co2, text, flagnum=0, flagact=0, flagwc=0;
 
       // Get the value of the input field with id="numb"
       x = document.getElementById("numb").value;
+      y = document.getElementById("waterdropdown").value;
+      water = document.getElementById("type1").value;
+      co2 = document.getElementById("type2").value;
 
       // If x is Not a Number or less than one or greater than 10
-      if (isNaN(x) || x < 1 || x > 10) {
-          text = "Input not valid";
-      } else {
-          text = "Input OK";
+      if (isNaN(x) || x <= 0) {
+          flagnum=1;
       }
-      document.getElementById("demo").innerHTML = text;
+      if (y == '------water------' || y == '------co2-------') {
+        flagact=1;
+      }
+      if (water != "water" && co2 != "CO2") {
+        flagwc=1;
+      }
+      
+      if (flagnum == 0 && flagact == 0 && flagwc == 0) {
+        window.location = "submit.html";
+      } else if (flagnum == 1 && flagact == 0 && flagwc == 0) {
+          text = "Please input valid number";
+      } else if (flagnum == 0 && flagact == 1 && flagwc == 0) {
+          text = "Please choose valid activity";
+      } else if (flagnum == 0 && flagact == 0 && flagwc == 1) {
+          text = "Please choose valid type";
+      } else {
+        text = "Please input valid number and activity"
+        document.getElementById("warning").innerHTML = "";
+      }
+      document.getElementById("warning").innerHTML = text;
   }
 
 //populatedropdown(id_of_day_select, id_of_month_select, id_of_year_select)
