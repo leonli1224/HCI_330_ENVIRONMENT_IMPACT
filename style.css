@@ -304,6 +304,12 @@ body {
     margin-right: -100px;
 }
 
+#warning {
+    font-size: 20px;
+    position: relative;
+    left: 140px;
+}
+
 #unit{
     position: relative;
     margin-left: 5px;
