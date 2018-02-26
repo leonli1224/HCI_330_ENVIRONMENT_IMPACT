@@ -79,8 +79,8 @@
       // Get the value of the input field with id="numb"
       x = document.getElementById("numb").value;
       y = document.getElementById("waterdropdown").value;
-      water = document.getElementById("type1").value;
-      co2 = document.getElementById("type2").value;
+      water = document.getElementById("type1").checked;
+      co2 = document.getElementById("type2").checked;
 
       // If x is Not a Number or less than one or greater than 10
       if (isNaN(x) || x <= 0) {
@@ -89,7 +89,7 @@
       if (y == '------water------' || y == '------co2-------') {
         flagact=1;
       }
-      if (water != "water" && co2 != "CO2") {
+      if (!water && !co2) {
         flagwc=1;
       }
       
