@@ -396,6 +396,12 @@ a.form-submit-button {
   font-size: 30px;
 }
 
+#warning {
+    position: relative;
+    left: 140px;
+
+}
+
 /******************new homepage**********/
 .welcome-text-div{
   /*background-color:#90f999;*/
