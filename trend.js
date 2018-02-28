@@ -133,3 +133,18 @@ function setco2XtoMonth() {
 
 
 // Plotly.newPlot('trend_co2', data);
+//setting the navbar
+//setting the navbar
+if(sessionStorage.getItem('userState')=== null||sessionStorage.getItem('userState')==='0'){
+	document.getElementById('signupText').style.display="inline-block";
+	document.getElementById('logoutText').style.display="none";
+	document.getElementById('loginText').style.display="inline-block";
+	document.getElementById('newimapctText').style.display="none";
+	document.getElementById('trendText').style.display="none";
+}else if (sessionStorage.getItem('userState')==='1'||sessionStorage.getItem('userState')==='2') {//user 1 is logged in
+	document.getElementById('signupText').style.display="none";
+	document.getElementById('newimapctText').style.display="inline-block";
+	document.getElementById('trendText').style.display="inline-block";
+	document.getElementById('logoutText').style.display="inline-block";
+	document.getElementById('loginText').style.display="none";
+}
