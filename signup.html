@@ -1,0 +1,44 @@
+<html>
+    <head>
+      <title>Environmental Impact Dashboard</title>
+      <link rel="stylesheet" type="text/css" href="style.css"/>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+      <script src="login.js"></script>
+
+    </head>
+    <body>
+      <div class="headbar">
+        <nav class="navbar nav">
+          <a href="index.html" class="fa fa-leaf" id="leaf"> </a>
+          <a class="nav-link" href="newTrend.html" id="headerText">Trend</a>
+          <a class="nav-link" href="#" id="headerText">Rank</a>
+          <a class="nav-link" href="newImport.html" id="headerText">Enter a New Impact</a>
+          <a class="nav-link" href="#" id="headerText">Product Search</a>
+          <a class="nav-link" href="login.html" id="loginText">Log In</a>
+          <a class="nav-link" href="signup.html" id="signupText">Sign Up</a>
+          <!--<div class="Trend"><a href="newTrend.html">Trend</a></div>
+          <div class="Rank">    <a href="#">Rank</a>                   </div>
+          <div class="Import">  <a href="#">Report New Import</a>      </div>
+          <div class="Product"> <a href="#">Product Impact Search</a>  </div>-->
+        </nav>
+      </div>
+
+      <div class="login-container-div">
+      <form>
+        <div class="container">
+        <label for="uname">Choose your Username</label>
+        <input type="text" id="uname" class="form-textbox" name="username" placeholder="Please enter your username" required>
+        <label for="pword">Choose your Password</label>
+        <input type="text" id="pword" name="password" class="form-textbox" placeholder="Please enter your password" required>
+        <label for="email">Please enter a valid email address</label>
+        <input type="text" id="email" name="email-field" class="form-textbox" placeholder="Please enter your email address" required>
+        <input type="button" class="login-button" id="sub-btn" value="Sign Up">
+      </div>
+      </form>
+    </div>
+
+   </body>
+</html>
