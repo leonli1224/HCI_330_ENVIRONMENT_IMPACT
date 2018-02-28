@@ -73,19 +73,39 @@
   }
 
   //data validation for liters
-  function myFunction() {
-      var x, text;
+  function validate() {
+      var x, y, water, co2, text, flagnum=0, flagact=0, flagwc=0;
 
       // Get the value of the input field with id="numb"
       x = document.getElementById("numb").value;
+      y = document.getElementById("waterdropdown").value;
+      water = document.getElementById("type1").checked;
+      co2 = document.getElementById("type2").checked;
 
       // If x is Not a Number or less than one or greater than 10
-      if (isNaN(x) || x < 1 || x > 10) {
-          text = "Input not valid";
-      } else {
-          text = "Input OK";
+      if (isNaN(x) || x <= 0) {
+          flagnum=1;
       }
-      document.getElementById("demo").innerHTML = text;
+      if (y == '------water------' || y == '------co2-------') {
+        flagact=1;
+      }
+      if (!water && !co2) {
+        flagwc=1;
+      }
+      
+      if (flagnum == 0 && flagact == 0 && flagwc == 0) {
+        window.location = "submit.html";
+      } else if (flagnum == 1 && flagact == 0 && flagwc == 0) {
+          text = "Please input valid number";
+      } else if (flagnum == 0 && flagact == 1 && flagwc == 0) {
+          text = "Please choose valid activity";
+      } else if (flagnum == 0 && flagact == 0 && flagwc == 1) {
+          text = "Please choose valid type";
+      } else {
+        text = "Please input valid number and activity"
+        document.getElementById("warning").innerHTML = "";
+      }
+      document.getElementById("warning").innerHTML = text;
   }
 
 //populatedropdown(id_of_day_select, id_of_month_select, id_of_year_select)
@@ -98,3 +118,32 @@ typedropdownco2("co2dropdown")
 
 console.log(document.getElementById("co2dropdown").style.display)
 console.log(document.getElementById("waterdropdown").style.display)
+//modal POPUP TO BE IMPLEMENTED LATER 
+window.onload = function(){
+  // Get the modal
+  var modal = document.getElementById('myModal');
+
+  // Get the button that opens the modal
+  var btn = document.getElementById('myBtn');
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal
+  btn.onclick = function() {
+      modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+
+}

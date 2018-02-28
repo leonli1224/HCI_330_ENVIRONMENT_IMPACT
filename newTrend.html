@@ -29,14 +29,20 @@
 
 
       <div class="chart">
-        <div class="chart">
           <div id="trend_water"></div>
           <script src="drawLine1.js"> </script>
           <div id="trend_co2"></div>
           <script src="drawLine2.js"> </script>
+
+
+
+
+        <script src="trend.js"> </script>
         </div>
+
+      <div class="drop-buttons">
         <div class="dropdown">
-          <button class="dropbtn">Water Time Range</button>
+          <button class="dropbtn">Water Time Range &#9660</button>
             <div class="dropdown-content">
               <a onclick="setXtoDay()">Day</a>
               <a onclick="setXtoWeek()">Week</a>
@@ -45,17 +51,23 @@
         </div>
 
 
-        <!-- Chester update -->
+
         <div class="dropdown-co2">
-          <button class="dropbtn-co2">CO2 Time Range</button>
+          <button class="dropbtn-co2">CO2 Time Range &#9660</button>
             <div class="dropdown-content-co2">
               <a onclick="setco2XtoDay()">Day</a>
               <a onclick="setco2XtoWeek()">Week</a>
               <a onclick="setco2XtoMonth()">Month</a>
             </div>
-        </div>
-        <script src="trend.js"> </script>
+        </div> 
       </div>
+
+        <div class="chart-pie">
+          <div id="pie_water"></div>
+          <script src="drawPieChart1.js"> </script>
+          <div id="pie_co2"></div>
+          <script src="drawPieChart2.js"> </script>
+        </div>
    </body>
 </html>
 <!--
