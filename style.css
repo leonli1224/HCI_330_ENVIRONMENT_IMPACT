@@ -30,6 +30,18 @@ body {
   float:left;
   margin-bottom: 0;
 }
+#trendText{
+  font-size:24px;
+  /*height: 80px;*/
+  float:left;
+  margin-bottom: 0;
+}
+#newimapctText{
+  font-size:24px;
+  /*height: 80px;*/
+  float:left;
+  margin-bottom: 0;
+}
 #signupText{/*change this innerHTML to be "" after login*/
   font-size:24px;
   float:right;
@@ -37,6 +49,11 @@ body {
 #loginText{/*change this innerHTML to be "" after login*/
   font-size:24px;
   float:right;
+}
+#logoutText{
+  font-size:24px;
+  float:right;
+  display: "none"
 }
 
 .nav a {

@@ -1,5 +1,9 @@
-
-
+window.onload = function(){
+  if (localStorage.getItem('userState')==='1'||localStorage.getItem('userState')==='2') {//user 1 is logged in
+  	document.getElementById('signupText').style.display="none";
+  	document.getElementById('logoutText').style.display="inline-block";
+  	document.getElementById('loginText').style.display="none";
+  }
   /***********************************************
   * Drop Down Date select script- by JavaScriptKit.com
   * This notice MUST stay intact for use
@@ -92,7 +96,7 @@
       if (!water && !co2) {
         flagwc=1;
       }
-      
+
       if (flagnum == 0 && flagact == 0 && flagwc == 0) {
         window.location = "submit.html";
       } else if (flagnum == 1 && flagact == 0 && flagwc == 0) {
@@ -118,8 +122,24 @@ typedropdownco2("co2dropdown")
 
 console.log(document.getElementById("co2dropdown").style.display)
 console.log(document.getElementById("waterdropdown").style.display)
-//modal POPUP TO BE IMPLEMENTED LATER 
-window.onload = function(){
+
+//modal POPUP TO BE IMPLEMENTED LATER
+
+    //setting the navbar
+    if(sessionStorage.getItem('userState')=== null||sessionStorage.getItem('userState')==='0'){
+      document.getElementById('signupText').style.display="inline-block";
+      document.getElementById('logoutText').style.display="none";
+      document.getElementById('loginText').style.display="inline-block";
+      document.getElementById('newimapctText').style.display="none";
+      document.getElementById('trendText').style.display="none";
+    }else if (sessionStorage.getItem('userState')==='1'||sessionStorage.getItem('userState')==='2') {//user 1 is logged in
+      document.getElementById('signupText').style.display="none";
+      document.getElementById('newimapctText').style.display="inline-block";
+      document.getElementById('trendText').style.display="inline-block";
+      document.getElementById('logoutText').style.display="inline-block";
+      document.getElementById('loginText').style.display="none";
+    }
+
   // Get the modal
   var modal = document.getElementById('myModal');
 
