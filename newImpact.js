@@ -3,6 +3,8 @@ window.onload = function(){
   	document.getElementById('signupText').style.display="none";
   	document.getElementById('logoutText').style.display="inline-block";
   	document.getElementById('loginText').style.display="none";
+    document.getElementById('userInfoText').innerHTML= sessionStorage.getItem('userState')==='1' ? 'Hello! user1' : 'Hello! user2';
+    document.getElementById('userInfoText').style.display="inline-block";
   }
   /***********************************************
   * Drop Down Date select script- by JavaScriptKit.com

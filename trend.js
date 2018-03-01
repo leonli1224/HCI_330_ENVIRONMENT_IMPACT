@@ -1,3 +1,11 @@
+window.onload = function(){
+  //setting the navbar
+  if (sessionStorage.getItem('userState')==='1'||sessionStorage.getItem('userState')==='2') {//user 1 is logged in
+    document.getElementById('userInfoText').innerHTML= sessionStorage.getItem('userState')==='1' ? 'Hello! user1' : 'Hello! user2';
+    document.getElementById('userInfoText').style.display="inline-block";
+  }
+}
+
 var day = ["9am", "10am", "11am", "12am","1pm","2pm","3pm","4pm","5pm"];
 var week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 var month = ["Week 1", "Week 2", "Week 3", "Week 4"];
