@@ -5,4 +5,5 @@ window.onload = function(){
   document.getElementById('trendText').style.display="none";
   document.getElementById('logoutText').style.display="none";
   document.getElementById('loginText').style.display="inline-block";
+  document.getElementById('userInfoText').style.display="none";
 }
