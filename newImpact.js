@@ -6,6 +6,11 @@ window.onload = function(){
     document.getElementById('userInfoText').innerHTML= sessionStorage.getItem('userState')==='1' ? 'Hello! user1' : 'Hello! user2';
     document.getElementById('userInfoText').style.display="inline-block";
   }
+  populatedropdown("daydropdown", "monthdropdown", "yeardropdown")
+  populatedropdowntime("hourdropdown", "secdropdown", "timedropdown")
+  typedropdownwater("waterdropdown")
+  typedropdownco2("co2dropdown")
+}
   /***********************************************
   * Drop Down Date select script- by JavaScriptKit.com
   * This notice MUST stay intact for use
@@ -115,12 +120,12 @@ window.onload = function(){
   }
 
 //populatedropdown(id_of_day_select, id_of_month_select, id_of_year_select)
-window.onload=function(){
-populatedropdown("daydropdown", "monthdropdown", "yeardropdown")
-populatedropdowntime("hourdropdown", "secdropdown", "timedropdown")
-typedropdownwater("waterdropdown")
-typedropdownco2("co2dropdown")
-}
+// window.onload=function(){
+// populatedropdown("daydropdown", "monthdropdown", "yeardropdown")
+// populatedropdowntime("hourdropdown", "secdropdown", "timedropdown")
+// typedropdownwater("waterdropdown")
+// typedropdownco2("co2dropdown")
+// }
 
 console.log(document.getElementById("co2dropdown").style.display)
 console.log(document.getElementById("waterdropdown").style.display)
@@ -168,4 +173,4 @@ console.log(document.getElementById("waterdropdown").style.display)
   //     }
   // }
 
-}
+
