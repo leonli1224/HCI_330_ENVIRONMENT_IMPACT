@@ -1,5 +1,5 @@
 window.onload = function(){
-  if (localStorage.getItem('userState')==='1'||localStorage.getItem('userState')==='2') {//user 1 is logged in
+  if (sessionStorage.getItem('userState')==='1'||sessionStorage.getItem('userState')==='2') {//user 1 is logged in
   	document.getElementById('signupText').style.display="none";
   	document.getElementById('logoutText').style.display="inline-block";
   	document.getElementById('loginText').style.display="none";
