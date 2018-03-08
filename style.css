@@ -556,6 +556,16 @@ a.form-submit-button {
     left: 280px;
 }
 
+.signup-container-div {
+    border-radius: 5px;
+    background-color: #90f999;
+    display:inline-block;
+    top:50px;
+    padding: 20px;
+    margin: 150px;
+    margin-top: 40px;
+}
+
 .close:hover,
 .close:focus {
   color: black;
