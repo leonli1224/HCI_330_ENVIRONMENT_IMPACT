@@ -11,6 +11,8 @@ window.onload = function(){
     document.getElementById('newimapctText').style.display="inline-block";
     document.getElementById('trendText').style.display="inline-block";
     document.getElementById('logoutText').style.display="inline-block";
+    document.getElementById('userInfoText').innerHTML= sessionStorage.getItem('userState')==='1' ? 'Hello! user1' : 'Hello! user2';
+    document.getElementById('userInfoText').style.display="inline-block";
     document.getElementById('loginText').style.display="none";
   }
 }

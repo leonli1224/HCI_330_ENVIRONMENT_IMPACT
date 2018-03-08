@@ -1,9 +1,16 @@
 window.onload = function(){
-  if (localStorage.getItem('userState')==='1'||localStorage.getItem('userState')==='2') {//user 1 is logged in
+  if (sessionStorage.getItem('userState')==='1'||sessionStorage.getItem('userState')==='2') {//user 1 is logged in
   	document.getElementById('signupText').style.display="none";
   	document.getElementById('logoutText').style.display="inline-block";
   	document.getElementById('loginText').style.display="none";
+    document.getElementById('userInfoText').innerHTML= sessionStorage.getItem('userState')==='1' ? 'Hello! user1' : 'Hello! user2';
+    document.getElementById('userInfoText').style.display="inline-block";
   }
+  populatedropdown("daydropdown", "monthdropdown", "yeardropdown")
+  populatedropdowntime("hourdropdown", "secdropdown", "timedropdown")
+  typedropdownwater("waterdropdown")
+  typedropdownco2("co2dropdown")
+}
   /***********************************************
   * Drop Down Date select script- by JavaScriptKit.com
   * This notice MUST stay intact for use
@@ -113,12 +120,12 @@ window.onload = function(){
   }
 
 //populatedropdown(id_of_day_select, id_of_month_select, id_of_year_select)
-window.onload=function(){
-populatedropdown("daydropdown", "monthdropdown", "yeardropdown")
-populatedropdowntime("hourdropdown", "secdropdown", "timedropdown")
-typedropdownwater("waterdropdown")
-typedropdownco2("co2dropdown")
-}
+// window.onload=function(){
+// populatedropdown("daydropdown", "monthdropdown", "yeardropdown")
+// populatedropdowntime("hourdropdown", "secdropdown", "timedropdown")
+// typedropdownwater("waterdropdown")
+// typedropdownco2("co2dropdown")
+// }
 
 console.log(document.getElementById("co2dropdown").style.display)
 console.log(document.getElementById("waterdropdown").style.display)
@@ -140,30 +147,30 @@ console.log(document.getElementById("waterdropdown").style.display)
       document.getElementById('loginText').style.display="none";
     }
 
-  // Get the modal
-  var modal = document.getElementById('myModal');
+  // // Get the modal
+  // var modal = document.getElementById('myModal');
 
-  // Get the button that opens the modal
-  var btn = document.getElementById('myBtn');
+  // // Get the button that opens the modal
+  // var btn = document.getElementById('myBtn');
 
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
+  // // Get the <span> element that closes the modal
+  // var span = document.getElementsByClassName("close")[0];
 
-  // When the user clicks the button, open the modal
-  btn.onclick = function() {
-      modal.style.display = "block";
-  }
+  // // When the user clicks the button, open the modal
+  // btn.onclick = function() {
+  //     modal.style.display = "block";
+  // }
 
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-      modal.style.display = "none";
-  }
+  // // When the user clicks on <span> (x), close the modal
+  // span.onclick = function() {
+  //     modal.style.display = "none";
+  // }
 
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-  }
+  // // When the user clicks anywhere outside of the modal, close it
+  // window.onclick = function(event) {
+  //     if (event.target == modal) {
+  //         modal.style.display = "none";
+  //     }
+  // }
 
-}
+
