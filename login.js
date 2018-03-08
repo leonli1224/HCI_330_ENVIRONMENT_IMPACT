@@ -1,17 +1,26 @@
 window.onload = function(){
   var submitButton = document.getElementById("sub-btn");
   var pword = document.getElementById("test");
-
   var username_one='user1';
   var username_two = 'user2';
 
   var password_one='psw1';
   var password_two = 'psw2';
-
+  var pop = document.getElementById('MyPop');
+  var span = document.getElementById("MyClose");
   //global variable
   var user_state = 0;//0, nobody logged in/1 user1 is logged in/ 2 user2 is logged in
-
+  pop.style.display = "block";
   //setting the navbar
+  span.onclick = function() {
+    pop.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == pop) {
+        pop.style.display = "none";
+    }
+}
   if(sessionStorage.getItem('userState')=== null||sessionStorage.getItem('userState')==='0'){
     document.getElementById('signupText').style.display="inline-block";
     document.getElementById('logoutText').style.display="none";
