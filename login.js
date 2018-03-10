@@ -3,7 +3,7 @@ window.onload = function(){
   var pword = document.getElementById("test");
   var username_one='user1';
   var username_two = 'user2';
-
+  var userinput = document.getElementById("uname");
   var password_one='psw1';
   var password_two = 'psw2';
   var pop = document.getElementById('MyPop');
@@ -16,6 +16,19 @@ window.onload = function(){
     pop.style.display = "none";
   }
 
+  userinput.oninput = function() {
+      var user = document.getElementById('uname').value;
+      console.log(user === username_one);
+      if (user !== username_one && user !== username_two) {
+        document.getElementById('uname_label').innerHTML = "Not a Valid Username";
+        document.getElementById('uname_label').style.color = "red";
+      } else {
+        console.log("HIt");
+        document.getElementById('uname_label').innerHTML = "Username";
+        document.getElementById('uname_label').style.color = "black";
+      }
+
+  }
   window.onclick = function(event) {
     if (event.target == pop) {
         pop.style.display = "none";
@@ -36,6 +49,7 @@ window.onload = function(){
     document.getElementById('userInfoText').style.display="inline-block";
     document.getElementById('loginText').style.display="none";
   }
+
 
   submitButton.onclick = function login() {
     var userName = document.getElementById('uname').value;
