@@ -1,8 +1,5 @@
 window.onload = function(){
   if (sessionStorage.getItem('userState')==='1'||sessionStorage.getItem('userState')==='2') {//user 1 is logged in
-  	document.getElementById('signupText').style.display="none";
-  	document.getElementById('logoutText').style.display="inline-block";
-  	document.getElementById('loginText').style.display="none";
     document.getElementById('userInfoText').innerHTML= sessionStorage.getItem('userState')==='1' ? 'Hello! user1' : 'Hello! user2';
     document.getElementById('userInfoText').style.display="inline-block";
   }
@@ -172,5 +169,3 @@ console.log(document.getElementById("waterdropdown").style.display)
   //         modal.style.display = "none";
   //     }
   // }
-
-
