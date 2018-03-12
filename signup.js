@@ -1,5 +1,5 @@
 window.onload = function(){
-  //setting the navbar
+  /*//setting the navbar
   if(sessionStorage.getItem('userState')=== null||sessionStorage.getItem('userState')==='0'){
     document.getElementById('signupText').style.display="inline-block";
     document.getElementById('logoutText').style.display="none";
@@ -12,7 +12,7 @@ window.onload = function(){
     document.getElementById('trendText').style.display="inline-block";
     document.getElementById('logoutText').style.display="inline-block";
     document.getElementById('loginText').style.display="none";
-  }
+  }*/
 
   document.getElementById('sub-btn').onclick = function login() {
     var userName = document.getElementById('uname').value;

@@ -259,7 +259,3 @@ if(sessionStorage.getItem('userState')=== null||sessionStorage.getItem('userStat
 	document.getElementById('logoutText').style.display="inline-block";
 	document.getElementById('loginText').style.display="none";
 }
-
-
-
-
